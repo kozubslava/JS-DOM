@@ -14,11 +14,9 @@ todoForm.addEventListener("submit", (e) => {
     task.className = "task";
     const btnDelete = document.createElement("button");
     btnDelete.className = "btn";
-    btnDelete.textContent = "Delete"
+    btnDelete.textContent = "Delete";
     btnDelete.addEventListener("click", (e) => {
       task.remove();
-      
-      
     });
     task.append(btnDelete);
     todoList.append(task);
